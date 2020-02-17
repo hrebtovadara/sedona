@@ -1,0 +1,30 @@
+.other-reasons {
+    background-color: #eeeeee;
+    margin: 0 -20px;
+}
+
+.other-reasons__item {
+    min-height: 168px;
+    padding: 28px 12px;
+    color: #333333;
+    border-bottom: 1px solid #d6d6d6;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.other-reasons__item:nth-last-child() {
+    border: none;
+ 
+}
+.other-reasons__item p {
+    margin: 0;
+}
+
+
+.other-reasons__item h2 {
+    margin: 0;
+}

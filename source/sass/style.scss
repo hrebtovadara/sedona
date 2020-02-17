@@ -20,6 +20,7 @@ html {
     box-sizing: border-box;
     min-width: 320px;
     overflow-x: hidden;
+    color: $color-font;
   }
   
   img {
@@ -37,6 +38,8 @@ html {
 
   $color-white: #ffffff;
   $color-block: #81b3d2;
+  $color-font: #333333;
+  $color-title: #000000;
 
 
   @import "../../node_modules/node-normalize-scss/normalize";
@@ -50,4 +53,6 @@ html {
   @import "block/important-reasons.scss";
   @import "block/sedona-picture.scss";
   @import "block/advice.scss";
+  @import "block/other-reasons.scss";
+  @import "block/search.scss";
   @import "block/visually-hidden.scss";

@@ -1,9 +1,9 @@
 .important-reasons {
-    min-height: 208px;
+    min-height: 191px;
     background-color: $color-block;
     color: $color-white;
     margin: 0 -20px;
-    padding: 54px 20px 40px;
+    padding: 40px 20px 40px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -16,6 +16,6 @@
     margin-bottom: 0;
 }
 
-.important-reasons__text {
+.important-reasons p {
     margin: 0;
 }
