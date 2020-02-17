@@ -1,0 +1,47 @@
+.advice {
+    min-height: 417px;
+    padding: 16px 0 0px 50px;
+}
+
+.advice__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.advice__item h3 {
+    margin-bottom: 14px;
+}
+
+.advice__item {
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.advice__item::before {
+    content: " ";
+    position: absolute;
+    top: -10px;
+    left: -48px;
+    width: 39px;
+    height: 37px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+  
+.advice__item::before svg {
+    fill: $color-block;
+}
+.advice__item--house::before {
+    background-image: url("../../img/icon-house.svg");
+    }
+
+.advice__item--gift::before {
+    background-image: url("../../img/icon-gift.svg");
+    background-position: 4px;
+}
+
+.advice__item--burger::before {
+    background-image: url("../../img/icon-burger.svg");
+    top: -5px;
+    left: -50px;
+}

@@ -1,3 +1,53 @@
-p {
-    color: blue;
-}
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-size: 14px;
+    line-height: 21px;
+    font-style: normal;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 320px;
+    overflow-x: hidden;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  $tablet-width: 768px;
+  $desktop-width: 1200px;
+  $mobile-width-only: 767px;
+  $retina-dppx: 1.5dppx;
+
+  $color-white: #ffffff;
+  $color-block: #81b3d2;
+
+
+  @import "../../node_modules/node-normalize-scss/normalize";
+  @import "block/text-title.scss";
+  @import "block/container.scss";
+  @import "block/header.scss";
+  @import "block/main-nav.scss";
+  @import "block/banner.scss";
+  @import "block/main.scss";
+  @import "block/description.scss";
+  @import "block/important-reasons.scss";
+  @import "block/sedona-picture.scss";
+  @import "block/advice.scss";
+  @import "block/visually-hidden.scss";

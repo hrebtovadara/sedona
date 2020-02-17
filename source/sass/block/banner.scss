@@ -1,0 +1,36 @@
+.banner {
+    display: flex;
+    background-image: url("../../img/bg-back-mobile@1x.jpg");
+    width: 320px;
+    height: 387px;
+    margin: 0 -20px;
+    background-repeat: no-repeat;
+    background-size: auto 387px;
+    position: relative;
+}
+
+.banner::before {
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    border-bottom: 28px solid $color-white;
+    border-right: 160px solid transparent;
+}
+
+.banner::after {
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    right: 0;
+    height: 0;
+    width: 0;
+    border-bottom: 28px solid $color-white;
+    border-left: 160px solid transparent;
+}
+
+.banner__text {
+   margin: 86px auto;
+}
