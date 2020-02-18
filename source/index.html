@@ -12,17 +12,29 @@
 <body>
 
   <header class="header container">
-    <nav class="header__nav main-nav visually-hidden">
+    <nav class="header__nav main-nav">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a>Главная</a></li>
-        <li class="main-nav__item"><a>Фото и видео</a></li>
-        <li class="main-nav__item"><a>Форма отзыва</a></li>
-        <li class="main-nav__item"><a>Html academy</a></li>
+        <li><a class="main-nav__item" href="#">Главная</a></li>
+        <li><a class="main-nav__item" href="#">Фото и видео</a></li>
+        <li><a class="main-nav__item" href="#">Форма отзыва</a></li>
+        <li><a class="main-nav__item" href="#">Html academy</a></li>
       </ul>
     </nav>
-    <div class="header__logo logo">
-      <svg></svg>
+    <div class="header__main">
+      <img class="header__logo" src="img/logo-sedona-mobile.svg">
+      <button class="header__toggle">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982"
+          enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+          <g>
+            <rect width="22.928" height="3.964" />
+            <rect y="9.009" width="22.928" height="3.964" />
+            <rect y="18.018" width="22.928" height="3.964" />
+          </g>
+        </svg>
+      </button>
     </div>
+
   </header>
 
   <main class="main container">
@@ -89,25 +101,49 @@
     </section>
     <div class="search">
       <h2 class="search__title">Заинтересовались?</h2>
-      <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+      </p>
       <a href="#" class="button">Найти гостиницу</a>
     </div>
   </main>
-  <footer class="footer">
+  <footer class="footer container">
     <div class="footer__map">
-
+      <img src="img/bg-map-mobile@1x.jpg" height="350" width="320">
     </div>
     <div class="footer__contacts contacts">
       <ul class="contacts__list">
-        <li class="contacts__item">#VISITSEDONA</li>
+        <li class="contacts__item contacts__visit">#VISITSEDONA</li>
         <li class="contacts__item social">
-          <svg></svg>
-          <svg></svg>
-          <svg></svg>
+          <ul class="social__list">
+            <li class="social__item">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                height="14px">
+                <image fill="ffffff" x="0px" y="0px" width="18px" height="14px"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAQAAACI04Q8AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjCxsREQN7+JnuAAAAm0lEQVQoz32RURWCQBRE7yHBRiACEYyADYhABBpwTEAENAERtAE2gAbXDxTdFbj7OztnZh4GgySvcVJ1MFhaYePdIpJ0xrTYqJP1KilMGTNmINAyUpEDJTEPzunPyTHxaQT7d8g9TpJxI3DEDFttotAiGXDhuetzhcUpHKTKRZZtyr9Oa7OvaFvWfQbGftPl9wZgsEq2Gqzjo78AGIVMdBRlPCcAAAAASUVORK5CYII=" />
+              </svg>
+            </li>
+            <li class="social__item">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px"
+                height="18px">
+                <image fell="ffffff" x="0px" y="0px" width="9px" height="18px"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAQAAAAjiTzDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjCxsROSHzxXagAAAAW0lEQVQY07WNQRGAMBADt0wFVEolnCRwAMpAAg6QgITwuMK0ffXD/rKTSRBCaNalgotVFa7uWkUgk3A2DkDIvoIJETEyLwmDINExwYAKMmAvaeH0R9rHsa2f1QOaa0/UgAJXogAAAABJRU5ErkJggg==" />
+              </svg>
+            </li>
+            <li class="social__item">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+                height="14px">
+                <image fill="ffffff" x="0px" y="0px" width="20px" height="14px"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAQAAACFzfR7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjCxsRIRlZ3FZnAAAAZklEQVQoz63SQRGAMAxE0V8GAZWAhErAQpWABFDaOigOljNtZpoDe8y8Q7ITlFQ0S1EKKmzMU4PkYMDiYyPM3Dym7NbehaIutf4eC2Jh946rMYucHMTvsK8nk0ZkwT96rC5X8T7FC+C9oZoMbr76AAAAAElFTkSuQmCC" />
+              </svg>
+            </li>
+          </ul>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__developer">
           <p>Разработано</p>
-          <svg></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+            <path fill="#000000"
+              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+          </svg>
         </li>
       </ul>
     </div>

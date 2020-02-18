@@ -20,7 +20,7 @@ html {
     box-sizing: border-box;
     min-width: 320px;
     overflow-x: hidden;
-    color: $color-font;
+    color: #333333;
   }
   
   img {
@@ -38,7 +38,6 @@ html {
 
   $color-white: #ffffff;
   $color-block: #81b3d2;
-  $color-font: #333333;
   $color-title: #000000;
 
 
@@ -55,4 +54,8 @@ html {
   @import "block/advice.scss";
   @import "block/other-reasons.scss";
   @import "block/search.scss";
+  @import "block/button.scss";
+  @import "block/footer.scss";
+  @import "block/contacts.scss";
+  @import "block/social.scss";
   @import "block/visually-hidden.scss";

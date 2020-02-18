@@ -1,0 +1,29 @@
+.main-nav__list {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+    margin: 0 -20px;
+}
+
+.main-nav__item {
+    min-height: 56px;
+    width: 320px;
+    background-color: $color-block;
+    text-align: center;
+    border-bottom: 1px solid #678fa8;
+    border-top: 1px solid #9ac2db;
+    padding: 7px 0;
+    display: block;
+    color: $color-white;
+}
+
+.main-nav__item:nth-child(1) {
+    border-top: none;
+}
+
+.main-nav__list li:nth-last-child(1) .main-nav__item {
+    border-bottom: none;
+    box-shadow: inset 0px -8px 10px -9px  rgba(0,0,0,0.5)
+}

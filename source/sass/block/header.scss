@@ -1,3 +1,26 @@
-.header {
+.header__main {
     min-height: 56px;
+    position: relative;
 }
+
+.header__logo {
+    position: absolute;
+    z-index: 2;
+    left: 90px;
+}
+
+.header__toggle {
+    background-color: transparent;
+    list-style: none;
+    border: none;
+    height: 23px;
+    width: 23px;
+    fill: $color-block;
+    position: absolute;
+    right: 6px;
+    top: 16px;
+ }
+
+ .header__nav {
+     min-height: 223px;
+ }
