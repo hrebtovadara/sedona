@@ -5,15 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+  <title></title>
 </head>
 
 <body>
-
   <header class="header container">
     <nav class="header__nav main-nav">
       <ul class="main-nav__list">
+        <!-- лучше так называть  -->
+        <!-- <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li> -->
         <li><a class="main-nav__item" href="#">Главная</a></li>
         <li><a class="main-nav__item" href="#">Фото и видео</a></li>
         <li><a class="main-nav__item" href="#">Форма отзыва</a></li>
@@ -34,7 +35,6 @@
         </svg>
       </button>
     </div>
-
   </header>
 
   <main class="main container">
@@ -81,6 +81,7 @@
       <p>- №2 -</p>
       <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
     </section>
+    <!-- скорее всего картинка должна быть в блоке section.important-reasons -->
     <img class="sedona-picture" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260">
     <section class="other-reasons">
       <div class="other-reasons__item">
@@ -108,12 +109,37 @@
   </main>
   <footer class="footer container">
     <div class="footer__map">
+      <!-- инлайновые стили height и width
+      когда будешь делать десктоп, инлайн будет сильно мешать -->
       <img src="img/bg-map-mobile@1x.jpg" height="350" width="320">
     </div>
     <div class="footer__contacts contacts">
+      <!-- скорее всего это не должено быть списком -->
       <ul class="contacts__list">
         <li class="contacts__item contacts__visit">#VISITSEDONA</li>
         <li class="contacts__item social">
+          <!-- соцсети это точно список
+            я бы так это сделал
+           -->
+          <!-- <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon"></svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon"></svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon"></svg>
+                </a>
+              </li>
+            </ul>
+          </div> -->
           <ul class="social__list">
             <li class="social__item">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
@@ -136,8 +162,10 @@
                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAQAAACFzfR7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjCxsRIRlZ3FZnAAAAZklEQVQoz63SQRGAMAxE0V8GAZWAhErAQpWABFDaOigOljNtZpoDe8y8Q7ITlFQ0S1EKKmzMU4PkYMDiYyPM3Dym7NbehaIutf4eC2Jh946rMYucHMTvsK8nk0ZkwT96rC5X8T7FC+C9oZoMbr76AAAAAElFTkSuQmCC" />
               </svg>
             </li>
+            <!-- добавил 100500 соцсетей и все поломалось =( -->
           </ul>
         </li>
+        <!-- можно вынести в отдельный компонент developer  -->
         <li class="contacts__item contacts__developer">
           <p>Разработано</p>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
@@ -148,6 +176,4 @@
       </ul>
     </div>
   </footer>
-
-
 </body>

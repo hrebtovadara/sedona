@@ -2,7 +2,29 @@
     width: 320px;
     padding: 0 20px;
     margin: 0 auto;
-    position: relative;
+    // контейнер должен только позиционировать блоки по ширине
+    // логику с relative лучше вынести в отдельный класс 
+    // отключил, вроде ничего не сломал)
+    // position: relative;
+
+
+    // @media запросы пришу прямо в классе,
+    // так показываю привязанность запроса к самому классу
+    // но это вообще не важно
+
+    // вышло бы вот так 
+    // @media (min-width: $tablet-width) {
+    //     width: 768px;
+    //     padding: 0;
+    //     margin: 0 auto;
+    // }
+
+    // @media (min-width: $desktop-width) {
+    //     width: 1280px;
+    //     padding: 0 40px;
+    //     margin: 0 auto;
+    // }
+
 }
 
 @media (min-width: $tablet-width) {
@@ -10,7 +32,7 @@
         width: 768px;
         padding: 0;
         margin: 0 auto;
-        position: relative;
+        // position: relative;
     }
 }
 
@@ -19,6 +41,6 @@
         width: 1280px;
         padding: 0 40px;
         margin: 0 auto;
-        position: relative;
+        // position: relative;
     }
 }

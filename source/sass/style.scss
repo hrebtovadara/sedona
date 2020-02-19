@@ -1,16 +1,19 @@
 html {
     box-sizing: border-box;
     overflow-x: hidden;
-  }
+}
   
-  *,
-  *::before,
-  *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
-  }
+}
   
-  body {
+body {
     font-size: 14px;
+    // line-height наследуют все текстовые блоки, включая заголовки
+    // по этому лучше не использовать его глобально
+    // но ты все равно перебиваешь это свойство в заголовках, так что все норм
     line-height: 21px;
     font-style: normal;
     font-family: 'PT Sans', sans-serif;
@@ -21,16 +24,17 @@ html {
     min-width: 320px;
     overflow-x: hidden;
     color: #333333;
-  }
+}
   
-  img {
+img {
     max-width: 100%;
-  }
+}
   
-  a {
+a {
     text-decoration: none;
-  }
+}
 
+  // все переменные лучше вынести в отдельный файл variables.scss
   $tablet-width: 768px;
   $desktop-width: 1200px;
   $mobile-width-only: 767px;
@@ -39,7 +43,6 @@ html {
   $color-white: #ffffff;
   $color-block: #81b3d2;
   $color-title: #000000;
-
 
   @import "../../node_modules/node-normalize-scss/normalize";
   @import "block/text-title.scss";
