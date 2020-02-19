@@ -19,8 +19,12 @@
     position: absolute;
     right: 6px;
     top: 16px;
+    // svg не помещалась в кнопке
+    box-sizing: content-box;
  }
 
  .header__nav {
-     min-height: 223px;
+    // скорее всего забыла убрать.
+    // А так, высота не нужна, потому как колличество элементов может поменяться
+    //  min-height: 223px;
  }
