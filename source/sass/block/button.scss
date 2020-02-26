@@ -7,5 +7,18 @@
     color: $color-white;
     width: 100%;
     padding: 16px 0;
-    
+}
+
+.button:hover {
+    background-color: $color-hover;
+}
+
+.button:active {
+    background-color: $color-active;
+    color: $color-active-font;
+}
+
+.button:disabled {
+    background-color: $color-disabled;
+    color: $color-white;
 }

@@ -5,9 +5,10 @@
     line-height: 40px;
     font-weight: bold;
     margin: 0 -20px;
+    position: relative;
 }
 
-.main-nav__item {
+.main-nav__link {
     min-height: 56px;
     width: 320px;
     background-color: $color-block;
@@ -19,11 +20,29 @@
     color: $color-white;
 }
 
-.main-nav__item:nth-child(1) {
+.main-nav__link:hover {
+    background-color: $color-hover;
+}
+
+.main-nav__link:active {
+    background-color: $color-active;
+    color: $color-active-font;
+}
+
+.main-nav__list li:nth-child(1) {
     border-top: none;
 }
 
-.main-nav__list li:nth-last-child(1) .main-nav__item {
+.main-nav__list li:nth-last-child(1) .main-nav__link {
     border-bottom: none;
     box-shadow: inset 0px -8px 10px -9px  rgba(0,0,0,0.5)
+}
+
+.main-nav__close {
+    border: none;
+    background-color: transparent;
+    fill: $color-white;
+    position: absolute;
+    top: 17px;
+    right: 14px;
 }

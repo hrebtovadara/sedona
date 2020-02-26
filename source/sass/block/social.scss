@@ -1,16 +1,27 @@
 .social__list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    margin: 0 65px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
     padding: 0;
+    margin-top: 10px;
 }
 
 .social__item {
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.social__link {
     width: 47px;
     height: 47px;
     background-color: $color-block;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.social__item:last-child {
+    margin-right: 0;
 }

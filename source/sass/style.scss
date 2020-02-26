@@ -39,6 +39,10 @@ html {
   $color-white: #ffffff;
   $color-block: #81b3d2;
   $color-title: #000000;
+  $color-hover: #669ec0;
+  $color-active: #5496bd;
+  $color-active-font:#88b6d1;
+  $color-disabled: #e5e5e5;
 
 
   @import "../../node_modules/node-normalize-scss/normalize";

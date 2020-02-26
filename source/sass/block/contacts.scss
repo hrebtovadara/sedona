@@ -1,4 +1,4 @@
-.contacts__list {
+.contacts {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 245px;
-    padding: 36px 0 17px;
+    padding: 36px 60px 17px 60px;
 }
 
 .contacts__visit {
@@ -23,11 +23,12 @@
     line-height: 26px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 12px;
 }
 
 .contacts__developer svg{
   width: unset;
   height: 42px;
-  margin-left: 3px;
+  
 }

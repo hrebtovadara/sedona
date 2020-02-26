@@ -21,6 +21,14 @@
     top: 16px;
  }
 
+ .header__toggle:hover {
+    fill: $color-hover;
+ }
+
+ .header__toggle:active {
+    fill: $color-active;
+ }
+
  .header__nav {
      min-height: 223px;
  }
