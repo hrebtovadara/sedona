@@ -4,3 +4,9 @@
     margin-top: 0;
     color: $color-title;
 }
+
+@media (min-width: $tablet-width) {
+    .text-title {
+        font-size: 21px;
+    }
+}

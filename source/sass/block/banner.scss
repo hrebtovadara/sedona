@@ -34,3 +34,16 @@
 .banner__text {
    margin: 86px auto;
 }
+
+@media (min-width: $tablet-width) {
+    .banner {
+        display: flex;
+        background-image: url("../../img/bg-back-tablet@1x.jpg");
+        width: 768px;
+        height: 520px;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+    }
+}

@@ -20,3 +20,12 @@
 .important-reasons p {
     margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+    .important-reasons {
+        min-height: 258px;
+        width: 256px;
+        margin: 0;
+        padding: 43px;
+    }
+}

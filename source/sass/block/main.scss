@@ -25,3 +25,19 @@
     border-left: 160px solid transparent;
 }
 
+@media (min-width: $tablet-width) {
+    .main__reasons {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main__description::before,
+    .main__description::after {
+        display: none;
+    }
+
+    .main__reasons--devils-brige {
+        order: 2;
+    }
+}

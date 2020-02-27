@@ -6,7 +6,10 @@
 .header__logo {
     position: absolute;
     z-index: 2;
-    left: 90px;
+    top: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 
 .header__toggle {
@@ -31,4 +34,26 @@
 
  .header__nav {
      min-height: 223px;
+ }
+
+ @media (min-width: $tablet-width) {
+
+    .header__main {
+        min-height: 0;
+        position: static;
+    }
+
+    .header__nav {
+        min-height: 56px;
+    }
+
+    .header__logo {
+        position: absolute;
+        left: 0;
+        right: 0;     
+    }
+
+    .header__toggle {
+        display: none;
+    }
  }
