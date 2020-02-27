@@ -87,5 +87,14 @@
         display: none;
     }
 
+    .main-nav__link:hover {
+        background-color: transparent;
+        color: $color-block;
+    }
+    
+    .main-nav__link:active {
+        background-color: transparent;
+        color: $color-menu-down;
+    }
     
 }

@@ -22,3 +22,9 @@
     background-color: $color-disabled;
     color: $color-white;
 }
+
+@media (min-width: $tablet-width) {
+    .button {
+        padding: 16px 0;
+    }
+}
