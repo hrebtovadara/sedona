@@ -11,7 +11,7 @@
     line-height: 21px;
 }
 
-.important-reasons .text-title {
+.important-reasons h2 {
     margin: 0;
     margin-bottom: 0;
     color: $color-white;
@@ -27,5 +27,17 @@
         width: 256px;
         margin: 0;
         padding: 43px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .important-reasons {
+        width: 400px;
+        margin: 0;
+        padding: 50px 63px 60px;
+    }
+
+    .important-reasons h2 {
+       margin: 0 30px;
     }
 }

@@ -14,3 +14,13 @@
         margin: 0;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .sedona-picture {
+        overflow: hidden;
+        width: 800px;
+        max-width: none;
+        height: 256px;
+        margin: 0;
+    }
+}

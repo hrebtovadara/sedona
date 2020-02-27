@@ -45,3 +45,18 @@
         justify-content: flex-start;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .other-reasons__item {
+        width: 400px;
+        min-height: 256px;
+        padding: 44px 56px 66px;
+        border: none;
+        margin: 0;
+    }
+
+    .other-reasons__item {
+        white-space: pre-line;
+    }
+
+}

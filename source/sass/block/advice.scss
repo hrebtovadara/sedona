@@ -88,3 +88,26 @@
         margin-bottom: 8px;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .advice__item {
+        min-height: 330px;
+        width: 400px;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        padding: 68px 60px;
+    }
+
+    .advice__item--house::before,
+    .advice__item--gift::before,
+    .advice__item--burger::before {
+        top: 58px;
+        left: 162px;
+        width: 80px;
+        height: 72px;
+    }
+
+}

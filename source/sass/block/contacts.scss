@@ -59,3 +59,14 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__item {
+    width: 400px;
+    text-align: center;
+  }
+
+  .contacts__developer {
+    padding-left: 40px;
+  }
+}

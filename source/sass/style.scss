@@ -22,6 +22,19 @@ html {
     overflow-x: hidden;
     color: #333333;
   }
+
+  @media (min-width: 1200px) {
+    body {
+      background-color: #f2f2f2;
+    }
+
+   .general {
+      background-color: #ffffff;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+      max-width: 1200px;
+      margin: 0 auto;
+   }
+  }
   
   img {
     max-width: 100%;

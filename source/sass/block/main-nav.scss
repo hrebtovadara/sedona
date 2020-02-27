@@ -98,3 +98,14 @@
     }
     
 }
+
+@media (min-width: $desktop-width) {
+    .main-nav__link {
+        height: 56px;
+        width: 235px;
+    } 
+
+    .main-nav__item:nth-child(4n+2) {
+        margin-right: 235px;
+    }
+}

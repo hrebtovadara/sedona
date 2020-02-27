@@ -28,3 +28,11 @@
         padding: 16px 0;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .button {
+        padding: 16px 0;
+        width: 460px;
+        margin: 0 auto;
+    }
+}

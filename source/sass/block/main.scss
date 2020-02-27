@@ -41,3 +41,9 @@
         order: 2;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .main__reasons--devils-brige {
+        white-space: pre-line;
+    }
+}

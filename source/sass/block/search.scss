@@ -31,3 +31,10 @@
         white-space: pre-line;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .search {
+        min-height: 330px;
+        padding: 56px 155px 66px;
+    }
+}
