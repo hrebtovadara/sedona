@@ -20,6 +20,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.social__icon--tw {
+    width: 18px;
+    height: 14px;
+}
+
+.social__icon--fb {
+    width: 9px;
+    height: 18px;
+}
+
+.social__icon--yout {
+    width: 20px;
+    height: 14px;
 }
 
 .social__item:last-child {
@@ -32,6 +48,10 @@
 
 .social__link:active {
     background-color:$color-active;
+}
+
+.social__link:hover svg {
+    color: red;
 }
 
 @media (min-width: $tablet-width) {
@@ -47,9 +67,9 @@
     }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
     .social__list {
-        max-width: 300px;
+        max-width: 160px;
         margin: 0 auto;
         margin-left: 124px;
     }

@@ -41,10 +41,17 @@
 .main-nav__close {
     border: none;
     background-color: transparent;
-    fill: $color-white;
     position: absolute;
     top: 17px;
     right: 14px;
+    width: 25px;
+    height: 25px;
+}
+
+.main-nav__svg {
+    width: 25px;
+    height: 25px;
+    fill: $color-white;
 }
 
 @media (min-width: $tablet-width) {

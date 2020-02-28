@@ -18,17 +18,22 @@
     border: none;
     height: 23px;
     width: 23px;
-    fill: $color-block;
     position: absolute;
     right: 6px;
     top: 16px;
  }
 
- .header__toggle:hover {
+ .header__menu {
+    height: 23px;
+    width: 23px;
+    fill: $color-block;
+ }
+
+ .header__toggle:hover .header__menu{
     fill: $color-hover;
  }
 
- .header__toggle:active {
+ .header__toggle:active .header__menu{
     fill: $color-active;
  }
 
@@ -36,6 +41,21 @@
      min-height: 223px;
  }
 
+ @media (max-width: $mobile-width-only) {
+    .header--closed .main-nav {
+      display: none;
+    }
+  
+    
+    .header--nojs .header__toggle {
+      display: none;
+    }
+  
+    .header--nojs .main-nav {
+      position: static;
+    }
+}
+  
  @media (min-width: $tablet-width) {
 
     .header__main {
@@ -57,10 +77,4 @@
         display: none;
     }
  }
-
-//  @media (min-width: $tablet-width) {
-//      header {
-//          background-color: $color-white;
-//          box-shadow: 0px px 10px 0px rgba(0, 0, 0, 0.5);
-//      }
-//  }
+ 

@@ -28,7 +28,14 @@
 .contacts__developer svg{
   width: unset;
   height: 42px;
-  
+}
+
+.contacts__developer:hover svg {
+  fill: $color-hover;
+}
+
+.contacts__developer:active svg {
+  fill: $color-menu-down;
 }
 
 @media (min-width: $tablet-width) {
@@ -47,16 +54,17 @@
   }
 
   .contacts__developer {
-    margin: 0;
-  }
-
-  .contacts__developer {
     color: $color-title;
     line-height: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
+  }
+
+  .contacts__developer svg {
+    width: 32px;
+    height: 40px;
   }
 }
 
@@ -69,4 +77,5 @@
   .contacts__developer {
     padding-left: 40px;
   }
+  
 }
