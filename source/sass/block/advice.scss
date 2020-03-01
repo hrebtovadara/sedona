@@ -26,25 +26,28 @@
     height: 37px;
     background-size: contain;
     background-repeat: no-repeat;
+    fill: red;
 }
   
-.advice__item::before svg {
+.advice__item--house::before {
+    background-image: url("../img/icon-house.svg");
+}
+
+.advice__item--gift::before {
+    background-image: url("../img/icon-gift.svg");
+    background-position: 4px;
     fill: $color-block;
 }
 
-.advice__item--house::before {
-    background-image: url("../../img/icon-house.svg");
-    }
-
-.advice__item--gift::before {
-    background-image: url("../../img/icon-gift.svg");
-    background-position: 4px;
-}
-
 .advice__item--burger::before {
-    background-image: url("../../img/icon-burger.svg");
+    background-image: url("../img/icon-burger.svg");
     top: -5px;
     left: -50px;
+    fill: red;
+}
+
+.advice__item--burger::before path {
+    fill: red;
 }
 
 @media (min-width: $tablet-width) {

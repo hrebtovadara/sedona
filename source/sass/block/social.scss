@@ -23,6 +23,10 @@
     text-align: center;
 }
 
+.social__icon {
+    fill: $color-white;
+}
+
 .social__icon--tw {
     width: 18px;
     height: 14px;
@@ -50,8 +54,8 @@
     background-color:$color-active;
 }
 
-.social__link:hover svg {
-    color: red;
+.social__link:active .social__icon {
+    fill: $color-active-font;
 }
 
 @media (min-width: $tablet-width) {
