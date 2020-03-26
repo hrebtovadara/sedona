@@ -2,11 +2,14 @@
     display: flex;
     background-image: url("../../img/bg-back-mobile@1x.jpg");
     width: 320px;
-    height: 387px;
     margin: 0 -20px;
     background-repeat: no-repeat;
-    background-size: auto 387px;
+    background-size: 320px 387px;
     position: relative;
+}
+
+.banner--index {
+    height: 387px;
 }
 
 .banner::before {
@@ -35,6 +38,18 @@
    margin: 86px auto;
    width: 282px;
    height: 214px;
+}
+
+.banner--photo {
+    width: 320px;
+    height: 160px;
+    background-position: 0px -220px;
+}
+
+.banner__text--photo {
+    width: 230px;
+    height: 40px;
+    margin: 50px auto;
 }
 
 @media (min-width: $tablet-width) {

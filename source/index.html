@@ -15,8 +15,8 @@
     <header class="header container header--closed header--nojs">
       <nav class="header__nav main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Фото и видео</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" >Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Форма отзыва</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Html academy</a></li>
         </ul>
@@ -41,12 +41,12 @@
     </header>
     <main class="main container">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-      <section class="banner">
+      <section class="banner banner--index">
         <img class="banner__text" src="img/text-sedona-index.svg">
       </section>
       <div class="main__description">
         <div class="description">
-          <h3 class="description__header text-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+          <h3 class="description__header--photo text-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
           <p class="description__text">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
         </div>
       </div>
@@ -172,28 +172,6 @@
 
 
 
-<script>
-var navMain = document.querySelector(".header");
-var navToggle = document.querySelector(".header__toggle");
-var buttonClose = document.querySelector(".main-nav__close");
-
-navMain.classList.remove("header--nojs");
-
-navToggle.addEventListener("click", function () {
-  if (navMain.classList.contains("header--closed")) {
-    navMain.classList.remove("header--closed");
-    navMain.classList.add("header--opened");
-  } else {
-    navMain.classList.add("header--closed");
-    navMain.classList.remove("header--opened");
-  }
-});
-
-buttonClose.addEventListener("click", function () {
-    navMain.classList.add("header--closed");
-    navMain.classList.remove("header--opened");
-});
-
-</script>
+<script src="js/nav.js"></script>
 
 </html>

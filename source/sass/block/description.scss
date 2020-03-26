@@ -12,6 +12,15 @@
     line-height: 26px;
 }
 
+.description--photo {
+    min-height: 188px; 
+    padding: 36px 23px 0; 
+    text-align: center;
+    line-height: 24px;
+   
+    margin: 0 -20px;
+}
+
 @media (min-width: $tablet-width) {
     .description {
         min-height: 204px; 
