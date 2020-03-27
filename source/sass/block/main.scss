@@ -40,6 +40,12 @@
     .main__reasons--devils-brige {
         order: 2;
     }
+
+    .main-photo-iframe {
+        width: 648px;
+        height: 500px;
+        margin: 0 60px;
+    }
 }
 
 @media (min-width: $desktop-width) {

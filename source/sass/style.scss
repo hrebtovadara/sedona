@@ -58,7 +58,8 @@ html {
   $color-active-font:#88b6d1;
   $color-disabled: #e5e5e5;
   $color-menu-down: #b2b2b2;
-
+  $color-fon-gallery-light: #f2f2f2;
+  $color-fon-gallery-dark: #eaeaea;
 
   @import "../../node_modules/node-normalize-scss/normalize";
   @import "block/text-title.scss";

@@ -19,3 +19,20 @@ buttonClose.addEventListener("click", function () {
     navMain.classList.add("header--closed");
     navMain.classList.remove("header--opened");
 });
+
+let galleryList = document.querySelectorAll(".gallery__item");
+
+for (let element of galleryList) {
+  element.onclick = function() {
+    let galleryImage = document.querySelector(".gallery__image");
+    galleryImage.classList.remove("gallery__image");
+    galleryImage.classList.add("gallery__image--preview");
+  }
+}
+
+// galleryList.onclick = function() {
+//   let galleryImage = galleryList.querySelector(".gallery__image");
+//   galleryImage.classList.remove(".gallery__image");
+//   galleryImage.classList.add(".gallery__image--preview");
+// }
+

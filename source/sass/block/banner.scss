@@ -81,6 +81,16 @@
         height: 350px;
     }
 
+    .banner--photo {
+        height: 292px;
+        background-position: 0px -220px;
+    }
+
+    .banner__text--photo {
+        width: 460px;
+        height: 80px;
+        margin: 94px auto 0;
+    }
 }
 
 @media (min-width: $desktop-width) {
@@ -99,7 +109,7 @@
     }
 
       .banner__text {
-        margin: 76px auto;
+        margin: 82px auto;
         width: 460px;
         height: 350px;
     }

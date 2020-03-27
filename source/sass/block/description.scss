@@ -30,6 +30,16 @@
     .description__header {
         margin-bottom: 28px;
     }
+
+    .description__header--photo {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .description--photo {
+        min-height: 246px;
+        padding: 64px 190px 55px; 
+    }
 }
 
 @media (min-width: $desktop-width) {
