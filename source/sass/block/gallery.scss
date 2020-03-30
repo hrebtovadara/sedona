@@ -36,8 +36,7 @@
     padding-bottom: 8px;
 }
 
-.gallery__like:hover,
-.gallery__like:active {
+.gallery__like-active {
    background-image: url("../../img/like-icon.png");
 }
 
@@ -80,6 +79,7 @@
 
     .gallery__image {
         display: block;
+        object-fit: cover;
         width: 324px;
         height: 267px;
     }
@@ -132,6 +132,7 @@
   
     .gallery__image {
         display: block;
+        
         width: 400px;
         height: 267px;
     }
@@ -160,7 +161,7 @@
         color: $color-white;
     }
 
-    .gallery__like:hover {
+    .gallery__like-active {
         background-image: url("../../img/like-icon-desktop.png");
      }
 }
