@@ -33,6 +33,7 @@ gulp.task("css", function () {
       .pipe(gulp.dest("build/css"))
   });
 
+ 
   gulp.task("html", function () {
     return gulp.src("source/*.html")
       .pipe(posthtml([
@@ -52,6 +53,7 @@ gulp.task("server", function () {
 
     gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "refresh"));
     gulp.watch("source/*.html", gulp.series("html", "refresh"));
+    gulp.watch("source/js/*.js", gulp.series("copy", "refresh"));
 });
 
 gulp.task("refresh", function (done) {

@@ -36,6 +36,11 @@
     padding-bottom: 8px;
 }
 
+.gallery__like:hover,
+.gallery__like:active {
+   background-image: url("../../img/like-icon.png");
+}
+
 .gallery__like-counter {
     margin: auto 0;
     font-weight: bold;
@@ -60,6 +65,11 @@
         background-color: $color-fon-gallery-light;
     }
 
+    .gallery__item-full {
+        min-height: 472px;
+        min-width: 648px;
+    }
+
     .gallery__item:nth-child(2n) {
         background-color:  $color-fon-gallery-dark;
     }
@@ -74,7 +84,8 @@
         height: 267px;
     }
 
-    .gallery__image--preview {
+    .gallery__image-full {
+        display: block;
         width: 648px;
         height: 400px;
     }
@@ -98,4 +109,58 @@
     .gallery__like {
         min-width: 40px;
     }
+}
+
+@media (min-width: $desktop-width) {
+    .gallery__list {
+        margin: 0;
+    }
+
+    .gallery__item {
+        min-height: 267px;
+        min-width: 400px;
+        color:  $color-white;
+        position: relative;
+    }
+
+    .gallery__item-full {
+        min-height: 400px;
+        min-width: 100%;
+        color:  $color-white;
+        position: relative;
+    }
+  
+    .gallery__image {
+        display: block;
+        width: 400px;
+        height: 267px;
+    }
+
+    .gallery__image-full {
+        display: block;
+        width: 1200px;
+        height: 400px;
+    }
+
+    .gallery__description {
+        padding: 18px 20px; 
+      
+        position: absolute;
+        bottom: 0;
+        width: 400px;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+
+    .gallery__item-full .gallery__description{
+        // min-height: 480px;
+        min-width: 100%;
+    }
+
+    .gallery__like {
+        color: $color-white;
+    }
+
+    .gallery__like:hover {
+        background-image: url("../../img/like-icon-desktop.png");
+     }
 }

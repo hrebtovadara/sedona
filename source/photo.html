@@ -51,10 +51,11 @@
             </div>
             <section class="gallery">
                 <ul class="gallery__list">
-                    <li class="gallery__item" style=height:480px;>
+                    <li class="gallery__item-full">
                         <picture>
-                            <source srcset="img/photo-sunset-tablet@1x.jpg" media="(min-width: 768px)">
-                            <img style=display:block; src="img/photo-sunset-mobile@1x.jpg" alt="неродные просторы">
+                            <!-- <source id="image-full" srcset="img/photo-sunset-desktop@1x.jpg" media="(min-width: 1200px)">
+                            <source id="image-full" srcset="img/photo-sunset-tablet@1x.jpg" media="(min-width: 768px)"> -->
+                            <img id="image-full" class="gallery__image-full" src="img/photo-sunset-mobile@1x.jpg" alt="неродные просторы">
                         </picture>
                         <div class="gallery__description">
                             <div>
@@ -66,10 +67,11 @@
                             </button>
                         </div>
                     </li>
-                    <!-- <li class="gallery__item">
+                    <li class="gallery__item">
                         <picture>
+                            <source srcset="img/photo-sunset-desktop@1x.jpg" media="(min-width: 1200px)">
                             <source srcset="img/photo-sunset-tablet@1x.jpg" media="(min-width: 768px)">
-                            <img class="gallery__image" src="img/photo-sunset-mobile@1x.jpg" alt="неродные просторы">
+                            <img class="gallery__image gallery__preview" src="img/photo-sunset-mobile@1x.jpg" alt="неродные просторы">
                         </picture>
                         <div class="gallery__description">
                             <div>
@@ -80,12 +82,11 @@
                                 <span class="gallery__like-counter">1350</span>
                             </button>
                         </div>
-                    </li> -->
+                    </li>
                     <li class="gallery__item">
                         <picture>
                             <source srcset="img/photo-cactus-tablet@1x.jpg" media="(min-width: 768px)">
-                            <img class="gallery__image" src="img/photo-cactus-mobile@1x.jpg"
-                                alt="местная растительность">
+                            <img class="gallery__image gallery__preview" src="img/photo-cactus-mobile@1x.jpg" alt="местная растительность">
                         </picture>
                         <div class="gallery__description">
                             <div>
@@ -100,7 +101,7 @@
                     <li class="gallery__item">
                         <picture>
                             <source srcset="img/photo-roads-tablet@1x.jpg" media="(min-width: 768px)">
-                            <img class="gallery__image" src="img/photo-roads-mobile@1x.jpg" alt="дорога на север">
+                            <img class="gallery__image  gallery__preview" src="img/photo-roads-mobile@1x.jpg" alt="дорога на север">
                         </picture>
                         <div class="gallery__description">
                             <div>
@@ -115,7 +116,7 @@
                     <li class="gallery__item">
                         <picture>
                             <source srcset="img/photo-bridge-tablet@1x.jpg" media="(min-width: 768px)">
-                            <img class="gallery__image" src="img/photo-bridge-mobile@1x.jpg" alt="мост дьявола">
+                            <img class="gallery__image  gallery__preview" src="img/photo-bridge-mobile@1x.jpg" alt="мост дьявола">
                         </picture>
                         <div class="gallery__description">
                             <div>

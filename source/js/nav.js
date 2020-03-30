@@ -24,15 +24,17 @@ let galleryList = document.querySelectorAll(".gallery__item");
 
 for (let element of galleryList) {
   element.onclick = function() {
-    let galleryImage = document.querySelector(".gallery__image");
-    galleryImage.classList.remove("gallery__image");
-    galleryImage.classList.add("gallery__image--preview");
+    let galleryImage = element.querySelector(".gallery__preview");
+    let galleryImageFull = document.querySelector(".gallery__image-full");
+    galleryImageFull.src = galleryImage.src;
+    
   }
 }
 
-// galleryList.onclick = function() {
-//   let galleryImage = galleryList.querySelector(".gallery__image");
-//   galleryImage.classList.remove(".gallery__image");
-//   galleryImage.classList.add(".gallery__image--preview");
-// }
+let buttonLikeList = document.querySelectorAll(".gallery__like");
 
+for (let element of buttonLikeList) {
+  element.onclick = function() {
+        
+  }
+}
