@@ -60,7 +60,9 @@ html {
   $color-menu-down: #b2b2b2;
   $color-fon-gallery-light: #f2f2f2;
   $color-fon-gallery-dark: #eaeaea;
-
+  $color-text-form: #333333;
+  $color-fon-input: #e6e6e6;
+  
   @import "../../node_modules/node-normalize-scss/normalize";
   @import "block/text-title.scss";
   @import "block/container.scss";
@@ -79,4 +81,5 @@ html {
   @import "block/contacts.scss";
   @import "block/social.scss";
   @import "block/gallery.scss";
+  @import "block/form.scss";
   @import "block/visually-hidden.scss";
