@@ -389,18 +389,7 @@
         width: 400px;
     }
 
-    .form__legend--full-title::before {
-        position: absolute;
-        content: " ";
-        width: 960px;
-        height: 1px;
-        background-color: $color-line;
-        z-index: 1;
-        top: 70%;
-        left: -280px;
-    }
-
-    .form__impression .form__legend {
+      .form__impression .form__legend {
         margin-left: 80px;
     }
 
@@ -481,18 +470,29 @@
         width: 400px;
         height: 46px;
         margin-right: 0;
-        
+        background-color: red;
     }
+
+    // .form__legend--full-title::before {
+    //     position: absolute;
+    //     content: " ";
+    //     width: 648px;
+    //     height: 1px;
+    //     background-color: $color-line;
+    //     z-index: -1;
+    //     top: 70%;
+    //     left: -125px;
+    // }
 
     .form__legend--full-title::before {
         position: absolute;
         content: " ";
-        width: 648px;
+        width: 960px;
         height: 1px;
         background-color: $color-line;
         z-index: -1;
         top: 70%;
-        left: -125px;
+        left: -280px;
     }
     
     .form__button {
