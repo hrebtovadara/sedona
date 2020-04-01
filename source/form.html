@@ -49,10 +49,10 @@
                 <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
                     достопримечательностях</p>
             </div>
-            <form class="form">
-                <div>
+            <form class="form form--container">
+                <div class="form__info-user">
                     <fieldset class="form__item form__name">
-                        <legend class="form__legend">Представьтесь:</legend>
+                        <legend class="form__legend ">Представьтесь:</legend>
                         <ul class="form__list">
                             <li class="form__name-item">
                                 <label for="" class="form__name-label">Имя*:</label>
@@ -69,7 +69,7 @@
                         </ul>
                     </fieldset>
                     <fieldset class="form__item form__contacts">
-                        <legend class="form__legend">Контактная информация:</legend>
+                        <legend class="form__legend form__legend--full-title">Контактная информация:</legend>
                         <ul class="form__list">
                             <li class="form__contacts-item">
                                 <label for="" class="form__contacts-label">Контактный телефон*:</label>
@@ -89,26 +89,26 @@
                             </li>
                         </ul>
                     </fieldset>
+                    <fieldset class="form__item form__impression">
+                        <legend class="form__legend">Ваше общее впечатление:</legend>
+                        <ul class="form__list">
+                            <li class="form__impression-item">
+                                <input id="positive" class="form__radio" type="radio" name="impression" checked>
+                                <label for="positive" class="form__radio-label">Скорее положительное</label>
+                            </li>
+                            <li class="form__impression-item">
+                                <input id="negative" class="form__radio" type="radio" name="impression">
+                                <label for="negative" class="form__radio-label">Скорее отрицательное</label>
+                            </li>
+                            <li class="form__impression-item">
+                                <input id="difficulty" class="form__radio" type="radio" name="impression">
+                                <label for="difficulty" class="form__radio-label">Затрудняюсь ответить</label>
+                            </li>
+                        </ul>
+                    </fieldset>
                 </div>
-                <fieldset class="form__item form__impression">
-                    <legend class="form__legend">Ваше общее впечатление:</legend>
-                    <ul class="form__list">
-                        <li class="form__impression-item">
-                            <input id="positive" class="form__radio" type="radio" name="impression" checked>
-                            <label for="positive" class="form__radio-label">Скорее положительное</label>
-                        </li>
-                        <li class="form__impression-item">
-                            <input id="negative" class="form__radio" type="radio" name="impression">
-                            <label for="negative" class="form__radio-label">Скорее отрицательное</label>
-                        </li>
-                        <li class="form__impression-item">
-                            <input id="difficulty" class="form__radio" type="radio" name="impression">
-                            <label for="difficulty" class="form__radio-label">Затрудняюсь ответить</label>
-                        </li>
-                    </ul>
-                </fieldset>
                 <fieldset class="form__item form__attractions">
-                    <legend class="form__legend">Посещенные достопримечательности:</legend>
+                    <legend class="form__legend form__legend--full-title" >Посещенные достопримечательности:</legend>
                     <ul class="form__list">
                         <li class="form__attractions-item">
                             <input id="most" class="form__checkbox" type="checkbox" name="attractions" checked>
@@ -129,10 +129,10 @@
                     </ul>
                 </fieldset>
                 <div class="form__item form__emotions">
-                    <label for="emotions" class="form__legend">Опишите свои эмоции:</legend>
+                    <label for="emotions" class="form__legend form__legend--full-title">Опишите свои эмоции:</legend>
                     <textarea id="emotions" class="form__emotions-input" placeholder="Опишите подробно все свои восторги"></textarea>
                 </div>
-                <button type="submit" class="button">Отправить отзыв</button>
+                <button type="submit" class="button form__button">Отправить отзыв</button>
             </form>
         </main>
         <footer class="footer container">
