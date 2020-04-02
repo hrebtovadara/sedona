@@ -249,12 +249,21 @@
     .form__legend--full-title::before {
         position: absolute;
         content: " ";
-        width: 648px;
+        width: 125px;
         height: 1px;
         background-color: $color-line;
-        z-index: -1;
         top: 70%;
         left: -125px;
+    }
+
+    .form__legend--full-title::after {
+        position: absolute;
+        content: " ";
+        width: 125px;
+        height: 1px;
+        background-color: $color-line;
+        top: 70%;
+        right: -125px;
     }
 
     .form__list {
@@ -351,16 +360,16 @@
         height: 46px;
     }
 
-    .form__legend--full-title::before {
-        position: absolute;
-        content: " ";
-        width: 648px;
-        height: 1px;
-        background-color: $color-line;
-        z-index: -1;
-        top: 70%;
-        left: -125px;
-    }
+    // .form__legend--full-title::before {
+    //     position: absolute;
+    //     content: " ";
+    //     width: 648px;
+    //     height: 1px;
+    //     background-color: $color-line;
+    //     z-index: -1;
+    //     top: 70%;
+    //     left: -125px;
+    // }
 }
 
 @media (min-width: $desktop-width) {
@@ -470,29 +479,26 @@
         width: 400px;
         height: 46px;
         margin-right: 0;
-        background-color: red;
     }
-
-    // .form__legend--full-title::before {
-    //     position: absolute;
-    //     content: " ";
-    //     width: 648px;
-    //     height: 1px;
-    //     background-color: $color-line;
-    //     z-index: -1;
-    //     top: 70%;
-    //     left: -125px;
-    // }
 
     .form__legend--full-title::before {
         position: absolute;
         content: " ";
-        width: 960px;
+        width: 280px;
         height: 1px;
         background-color: $color-line;
-        z-index: -1;
         top: 70%;
         left: -280px;
+    }
+
+    .form__legend--full-title::after {
+        position: absolute;
+        content: " ";
+        width: 280px;
+        height: 1px;
+        background-color: $color-line;
+        top: 70%;
+        right: -280px;
     }
     
     .form__button {

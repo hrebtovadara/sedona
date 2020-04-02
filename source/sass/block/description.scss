@@ -37,6 +37,7 @@
 
     .description__header {
         margin-bottom: 28px;
+        line-height: 30px;
     }
 
     .description__header--photo {
@@ -74,9 +75,15 @@
     .description--form {
         min-height: 255px; 
         margin: 0;
-        padding: 110px 380px 2px; 
+        padding: 80px 380px 2px; 
         text-align: center;
         line-height: 24px;
         border-bottom: none;
+    }
+
+    .description__header {
+        margin-bottom: 28px;
+        line-height: 30px;
+        font-size: 30px;
     }
 }
