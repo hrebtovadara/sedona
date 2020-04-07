@@ -276,6 +276,8 @@
 
     .form__input--contacts {
         width: 100%;
+        
+        box-sizing: border-box;
     }
     
     .form__contacts-item {
