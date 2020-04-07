@@ -97,6 +97,11 @@
     padding: 20px;
 }
 
+// .form__input:active .form__icon,
+// .form__input:focus .form__icon {
+//     bottom: 4px;
+// }
+
 .form__radio-label {
     padding: 16px 0;
     padding-left: 78px;
@@ -274,19 +279,19 @@
         position: relative;
     }
 
-    .form__input--contacts {
-        width: 100%;
+    // .form__input--contacts {
+    //     width: 100%;
         
-        box-sizing: border-box;
-    }
+    //     box-sizing: border-box;
+    // }
     
-    .form__contacts-item {
-        width: 648px;
-    }
+    // .form__contacts-item {
+    //     width: 648px;
+    // }
 
-    .form__contacts-label {
-        padding: 15px 22px 15px;
-    }
+    // .form__contacts-label {
+    //     padding: 15px 22px 15px;
+    // }
 
     // __________________________________________________________________impressions
 
@@ -392,16 +397,16 @@
         padding: 50px 0;
     }
 
-    .form__input--contacts {
-        width: 290px;
-    }
+    // .form__input--contacts {
+    //     width: 290px;
+    // }
     
-    .form__contacts-item {
-        width: 480px;
-        height: 58px;
-        flex-direction: row;
-        align-items: center;
-    }
+    // .form__contacts-item {
+    //     width: 480px;
+    //     height: 58px;
+    //     flex-direction: row;
+    //     align-items: center;
+    // }
      // __________________________________________________________________impressions
 
     
