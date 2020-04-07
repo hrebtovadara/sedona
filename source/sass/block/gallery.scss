@@ -78,6 +78,7 @@
     .gallery__item-full {
         min-height: 472px;
         min-width: 648px;
+        order: -1;
     }
 
     .gallery__item:nth-child(2n) {

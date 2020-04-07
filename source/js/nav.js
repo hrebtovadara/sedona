@@ -37,12 +37,42 @@ for (let element of buttonLikeList) {
 }
 
 
-let galleryList = document.querySelectorAll(".gallery__item"); 
-  for (let element of galleryList) {
-    let imageElement = element.querySelector(".gallery__image");
-    imageElement.onclick = function () {
-       element.classList.toggle("gallery__item-full");
-       let galleryFull = element.querySelector(".gallery__image");
-       galleryFull.classList.toggle("gallery__image-full");
+let galleryList = document.querySelectorAll(".gallery__item");
+for (let element of galleryList) {
+  let imageElement = element.querySelector(".gallery__image");
+
+  imageElement.onclick = function () {
+    collapseOtherFullImages(element, imageElement);
+
+    element.classList.toggle("gallery__item-full");
+    let galleryFull = element.querySelector(".gallery__image");
+    galleryFull.classList.toggle("gallery__image-full");
+  }
+}
+
+function collapseOtherFullImages(item, image) {
+  let fullImages = document.querySelectorAll(".gallery__image-full");
+  for (let fullImage of fullImages) {
+    if (image != fullImage) {
+      fullImage.classList.remove("gallery__image-full");
     }
   }
+
+  let fullItems = document.querySelectorAll(".gallery__item-full");
+  for (let fullItem of fullItems) {
+    if (fullItem != item) {
+      fullItem.classList.remove("gallery__item-full");
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
