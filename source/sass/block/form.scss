@@ -151,6 +151,10 @@
     margin-top: 18px;
 }
 
+.form__emotions-input::placeholder {
+    color:  $color-down-marker;
+}
+
 .form__emotions-input:hover {
     background-color: $color-disabled;
 }
@@ -166,9 +170,6 @@
     border-bottom: none;
 }
 
-.form__emotions-input::placeholder {
-    color: $color-black;
-}
 
 @media (min-width: $tablet-width) {
     .form--container {
