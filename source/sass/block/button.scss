@@ -9,20 +9,21 @@
     padding: 16px 0;
     border: none;
     text-transform: uppercase;
-}
 
-.button:hover {
-    background-color: $color-hover;
-}
 
-.button:active {
-    background-color: $color-active;
-    color: $color-active-font;
-}
+    &:hover {
+        background-color: $color-hover;
+    }
 
-.button:disabled {
-    background-color: $color-disabled;
-    color: $color-white;
+    &:active {
+        background-color: $color-active;
+        color: $color-active-font;
+    }
+
+    &:disabled {
+        background-color: $color-disabled;
+        color: $color-white;
+    }
 }
 
 @media (min-width: $tablet-width) {

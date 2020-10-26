@@ -1,80 +1,87 @@
-.header__main {
-    min-height: 56px;
-    position: relative;
+.header {
+    &__main {
+      min-height: 56px;
+      position: relative;
+    }
+
+    &__logo {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+
+    &__toggle {
+      background-color: transparent;
+      list-style: none;
+      border: none;
+      height: 23px;
+      width: 23px;
+      position: absolute;
+      right: 6px;
+      top: 16px;
+
+
+        &:hover .header__menu {
+          fill: $color-hover;
+        }
+
+        &:active .header__menu {
+          fill: $color-active;
+        }
+    }
+
+    &__menu {
+      height: 23px;
+      width: 23px;
+      fill: $color-block;
+    }
+
+    &__nav {
+      min-height: 223px;
+    }
 }
-
-.header__logo {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-}
-
-.header__toggle {
-    background-color: transparent;
-    list-style: none;
-    border: none;
-    height: 23px;
-    width: 23px;
-    position: absolute;
-    right: 6px;
-    top: 16px;
- }
-
- .header__menu {
-    height: 23px;
-    width: 23px;
-    fill: $color-block;
- }
-
- .header__toggle:hover .header__menu{
-    fill: $color-hover;
- }
-
- .header__toggle:active .header__menu{
-    fill: $color-active;
- }
-
- .header__nav {
-     min-height: 223px;
- }
 
  @media (max-width: $mobile-width-only) {
-    .header--closed .main-nav {
-      display: none;
-    }
-  
-    
-    .header--nojs .header__toggle {
-      display: none;
-    }
-  
-    .header--nojs .main-nav {
-      position: static;
-    }
+   .header {
+       &--closed .main-nav {
+         display: none;
+       }
+
+
+       &--nojs .header__toggle {
+         display: none;
+       }
+
+       &--nojs .main-nav {
+         position: static;
+       }
+   }
 }
   
  @media (min-width: $tablet-width) {
+   .header {
 
-    .header__main {
-        min-height: 0;
-        position: static;
-    }
+     &__main {
+       min-height: 0;
+       position: static;
+     }
 
-    .header__nav {
-        min-height: 56px;
-    }
+     &__nav {
+       min-height: 56px;
+     }
 
-    .header__logo {
-        position: absolute;
-        left: 0;
-        right: 0;     
-    }
+     &__logo {
+       position: absolute;
+       left: 0;
+       right: 0;
+     }
 
-    .header__toggle {
-        display: none;
-    }
+     &__toggle {
+       display: none;
+     }
+   }
  }
  

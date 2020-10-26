@@ -1,118 +1,124 @@
-.main-nav__list {
-    list-style: none;
-    padding: 0;
-    font-size: 18px;
-    line-height: 40px;
-    font-weight: bold;
-    margin: 0 -20px;
-    position: relative;
-}
+.main-nav {
+    &__list {
+        list-style: none;
+        padding: 0;
+        font-size: 18px;
+        line-height: 40px;
+        font-weight: bold;
+        margin: 0 -20px;
+        position: relative;
+    }
 
-.main-nav__link {
-    min-height: 56px;
-    width: 320px;
-    background-color: $color-block;
-    text-align: center;
-    border-bottom: 1px solid #678fa8;
-    border-top: 1px solid #9ac2db;
-    padding: 7px 0;
-    display: block;
-    color: $color-white;
-}
+    &__link {
+        min-height: 56px;
+        width: 320px;
+        background-color: $color-block;
+        text-align: center;
+        border-bottom: 1px solid #678fa8;
+        border-top: 1px solid #9ac2db;
+        padding: 7px 0;
+        display: block;
+        color: $color-white;
 
-.main-nav__link:hover {
-    background-color: $color-hover;
-}
 
-.main-nav__link:active {
-    background-color: $color-active;
-    color: $color-active-font;
-}
+        &:hover {
+            background-color: $color-hover;
+        }
 
-.main-nav__list li:nth-child(1) {
-    border-top: none;
-}
+        &:active {
+            background-color: $color-active;
+            color: $color-active-font;
+        }
+    }
 
-.main-nav__list li:nth-last-child(1) .main-nav__link {
-    border-bottom: none;
-    box-shadow: inset 0px -8px 10px -9px  rgba(0,0,0,0.5)
-}
+    &__list li:nth-child(1) {
+        border-top: none;
+    }
 
-.main-nav__close {
-    border: none;
-    background-color: transparent;
-    position: absolute;
-    top: 17px;
-    right: 14px;
-    width: 25px;
-    height: 25px;
-}
+    &__list li:nth-last-child(1) .main-nav__link {
+        border-bottom: none;
+        box-shadow: inset 0px -8px 10px -9px rgba(0, 0, 0, 0.5)
+    }
 
-.main-nav__svg {
-    width: 25px;
-    height: 25px;
-    fill: $color-white;
+    &__close {
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top: 17px;
+        right: 14px;
+        width: 25px;
+        height: 25px;
+    }
+
+    &__svg {
+        width: 25px;
+        height: 25px;
+        fill: $color-white;
+    }
 }
 
 @media (min-width: $tablet-width) {
-    .main-nav__list {
-        font-size: 14px;
-        line-height: 26px;
-        font-weight: bold;
-        margin: 0;
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+    .main-nav {
+        &__list {
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: bold;
+            margin: 0;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
-    .main-nav__item {
-        min-height: 56px;
-    }
-    
-    .main-nav__item:nth-child(4n+2) {
-        margin-right: 150px;
-    }
+        &__item {
+            min-height: 56px;
+        }
 
-    .main-nav__link {
-        height: 56px;
-        width: 150px;
-        background-color: transparent;
-        text-align: center;
-        border: none;
-        color: $color-black;
-        padding: 0;
-        display: table-cell;
-        vertical-align: middle;
-    } 
+        &__item:nth-child(4n+2) {
+            margin-right: 150px;
+        }
 
-    .main-nav__list li:nth-last-child(1) .main-nav__link {
-        box-shadow: none;
-    }
+        &__link {
+            height: 56px;
+            width: 150px;
+            background-color: transparent;
+            text-align: center;
+            border: none;
+            color: $color-black;
+            padding: 0;
+            display: table-cell;
+            vertical-align: middle;
+        }
 
-    .main-nav__close {
-        display: none;
-    }
+        &__list li:nth-last-child(1) .main-nav__link {
+            box-shadow: none;
+        }
 
-    .main-nav__link:hover {
-        background-color: transparent;
-        color: $color-block;
+        &__close {
+            display: none;
+        }
+
+        &__link:hover {
+            background-color: transparent;
+            color: $color-block;
+        }
+
+        &__link:active {
+            background-color: transparent;
+            color: $color-menu-down;
+        }
     }
-    
-    .main-nav__link:active {
-        background-color: transparent;
-        color: $color-menu-down;
-    }
-    
 }
 
 @media (min-width: $desktop-width) {
-    .main-nav__link {
-        height: 56px;
-        width: 235px;
-    } 
+    .main-nav {
+        &__link {
+            height: 56px;
+            width: 235px;
+        }
 
-    .main-nav__item:nth-child(4n+2) {
-        margin-right: 235px;
+        &__item:nth-child(4n+2) {
+            margin-right: 235px;
+        }
     }
 }

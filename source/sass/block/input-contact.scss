@@ -1,92 +1,88 @@
-.input-contact__field {
-    border: none;
-    background-color: $color-fon-gallery-light;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
-    // min-height: 58px;
-    min-width: 193px;
-    padding: 16px 20px;
-}
-
-.input-contact__field:hover {
-    background-color: $color-disabled;
-}
-
-.input-contact__field:active,
-.input-contact__field:focus {
-    background-color: $color-fon-gallery-light;
-    border: 4px solid $color-disabled;
-}
-
-.input-contact__field::placeholder {
-    color:  $color-down-marker;
-}
-
-.input-contact__field {
-    width: 280px;
-    position: relative;
-}
-
 .input-contact {
     width: 280px;
     // height: 104px;
     display: flex;
     flex-direction: column;
     position: relative;
+
+
+    .input-contact__field {
+        border: none;
+        background-color: $color-fon-gallery-light;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: bold;
+        padding: 16px 20px;
+        width: 280px;
+        position: relative;
+
+
+        &:hover {
+            background-color: $color-disabled;
+        }
+
+        &:active,
+        &:focus {
+            background-color: $color-fon-gallery-light;
+            border: 4px solid $color-disabled;
+        }
+
+        &::placeholder {
+            color: $color-down-marker;
+        }
+    }
+
+    &__label {
+        padding: 15px 22px 10px;
+    }
+
+    &__icon {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 58px;
+        height: 58px;
+        background-color: $color-fon-input;
+        padding: 20px;
+    }
 }
-
-.input-contact__label {
-    padding: 15px 22px 10px;
-}
-
-.input-contact__icon {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    width: 58px;
-    height: 58px;
-    background-color: $color-fon-input;
-    padding: 20px;
-}
-
-
 
 @media (min-width: $tablet-width) {
-    .input-contact__field {
-        min-width: 178px;
-        width: 100%;
-        box-sizing: border-box;
-    }
     
     .input-contact {
         width: 648px;
-    }
 
-    .input-contact__label {
-        padding: 15px 22px 15px;
-    }
+        &__label {
+            padding: 15px 22px 15px;
+        }
 
-    .input-contact__field:focus .input-contact__icon {
-        bottom: 4px;
+        &__field {
+            min-width: 178px;
+            width: 100%;
+            box-sizing: border-box;
+
+            &:focus .input-contact__icon {
+                bottom: 4px;
+            }
+        }
     }
 }
 
 
 @media (min-width: $desktop-width) {
    
-    .input-contact__field {
-        width: 290px;
-    }
-    
     .input-contact {
         width: 480px;
         height: 58px;
         flex-direction: row;
         align-items: center;
-    }
 
-    .input-contact__label {
-        padding: 15px 30px 15px;
+        &__label {
+            padding: 15px 30px 15px;
+        }
+
+        &__field {
+            width: 290px;
+        }
     }
 }
