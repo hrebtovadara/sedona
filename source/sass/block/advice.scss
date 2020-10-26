@@ -106,9 +106,9 @@
         padding: 68px 60px;
 
 
-        &__item--house::before,
-        &__item--gift::before,
-        &__item--burger::before {
+        &--house::before,
+        &--gift::before,
+        &--burger::before {
             top: 58px;
             left: 162px;
             width: 80px;
